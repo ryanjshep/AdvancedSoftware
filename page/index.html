@@ -27,7 +27,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="success" ng-repeat="x in carList">
+        <tr ng-repeat="x in carList">
           <td> <button ng-click="listToLoad(x)">Load In</button> </td>
           <td> <h4>{{x.name}}</h4></td>
           <td> {{x.id}} </td>
@@ -51,14 +51,21 @@
       </thead>
       <tbody>
         <tr class="success" ng-repeat="x in loadList">
-          <td> <button ng-click="loadToList(x)">Load In</button> </td>
+          <td> <button ng-click="loadToList(x)">Load Out</button> </td>
           <td> <h4>{{x.name}}</h4></td>
           <td> {{x.id}} </td>
           <td> {{x.date}}</td>
         </tr>
       </tbody>
     </table>
-    </div>
+
+    <button type="button" class="btn btn-primary"
+      onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">
+      Ready To Load Out
+    </button>
+
+  </div>
+
   </div>
 </div>
 
