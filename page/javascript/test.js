@@ -53,6 +53,16 @@ var tmpCarList = [
   name: "Orange Car",
   id: 3,
   date: "1/9/99"
+},
+{
+  name: "Purple Car",
+  id: 4,
+  date: "6/20/49"
+},
+{
+  name: "Teal Car",
+  id: 5,
+  date: "6/1/05"
 }
 ];
 
