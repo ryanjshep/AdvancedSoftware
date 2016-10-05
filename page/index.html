@@ -1,109 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="store" ng-controller="StoreController">
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="javascript/test.js"></script>
 </head>
-<body>
 
 <div class="container">
-  <h2>Contextual Classes</h2>
-  <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+  <h1> Car List Example</h1>
   <table class="table">
     <thead>
-      <tr>
-        <th> Load In</th>
-        <th> Move ID</th>
-        <th> StockNum</th>
-        <th> Move Type</th>
-        <th> Vehicle </th>
-        <th> Vehicle </th>
-        <th> Vin </th>
-        <th> Status </th>
-        <th> ContractRate </th>
-        <th> ContractRate </th>
-        <th> From </th>
-        <th> From Address </th>
-        <th> To </th>
-        <th> To Address </th>
-        <th> SchedulePickup </th>
-        <th> ScheduleDelivery </th>
-        <th> CancelDate </th>
-        <th> AssignedDate </th>
+      <tr> 
+        <th> load </th>
+        <th> NAME </th>
+        <th> ID </th>
+        <th> Date </th>
       </tr>
     </thead>
     <tbody>
-      <tr class="success">
-        <td> <button type="button" class="btn btn-default">Load In</button> </td>
-        <td>5700</td>
-        <td>199999</td>
-        <td>OPENLANE</td>
-        <td> 2014 Jeep</td>
-        <td> W123YUI123123</td>
-        <td> In Transit </td>
-        <td> 123 </td>
-        <td> California 123 Fun Street </td>
-        <td> California 123 Fun Street </td>
-        <td> California 777 Death </td>
-        <td> California 777 Death </td>
-        <td> 9/09/2019 </td>
-        <td> 9/09/2019 </td>
-        <td> N/A </td>
-        <td> 20/20/2020 </td>
-        <td> N/A </td>
-        <td> 20/20/2020 </td>
-      </tr>
-      <tr class="danger">
-        <td> <button type="button" class="btn btn-default">Load In</button> </td>
-        <td>5700</td>
-        <td>199999</td>
-        <td>OPENLANE</td>
-        <td> 2014 Jeep</td>
-        <td> W123YUI123123</td>
-        <td> In Transit </td>
-        <td> 123 </td>
-        <td> California 123 Fun Street </td>
-        <td> California 123 Fun Street </td>
-        <td> California 777 Death </td>
-        <td> California 777 Death </td>
-        <td> 9/09/2019 </td>
-        <td> 9/09/2019 </td>
-        <td> N/A </td>
-        <td> 20/20/2020 </td>
-        <td> N/A </td>
-        <td> 20/20/2020 </td>
-
-      </tr>
-      <tr class="info">
-        <td> <button type="button" class="btn btn-default">Load In</button> </td>
-        <td>5700</td>
-        <td>199999</td>
-        <td>OPENLANE</td>
-        <td> 2014 Jeep</td>
-        <td> W123YUI123123</td>
-        <td> In Transit </td>
-        <td> 123 </td>
-        <td> California 123 Fun Street </td>
-        <td> California 123 Fun Street </td>
-        <td> California 777 Death </td>
-        <td> California 777 Death </td>
-        <td> 9/09/2019 </td>
-        <td> 9/09/2019 </td>
-        <td> N/A </td>
-        <td> 20/20/2020 </td>
-        <td> N/A </td>
-        <td> 20/20/2020 </td>
-
+      <tr class="success" ng-repeat="x in carList">
+        <td> <button ng-click="listToLoad(x)">Load In</button> </td>
+        <td> <h4>{{x.name}}</h4></td>
+        <td> {{x.id}} </td>
+        <td> {{x.date}}</td>
       </tr>
     </tbody>
   </table>
 </div>
+
+<div class="container">
+  <h1> Load List Example</h1>
+  <table class="table">
+    <thead>
+      <tr> 
+        <th> load </th>
+        <th> NAME </th>
+        <th> ID </th>
+        <th> Date </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success" ng-repeat="x in loadList">
+        <td> <button ng-click="loadToList(x)">Load In</button> </td>
+        <td> <h4>{{x.name}}</h4></td>
+        <td> {{x.id}} </td>
+        <td> {{x.date}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
 
 </body>
 </html>
