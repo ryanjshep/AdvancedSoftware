@@ -14,6 +14,7 @@ app.controller('StoreController', function($scope, $http){
   //      the right vice versa
   //
   $scope.carList = tmpCarList;
+  $scope.propertyName = '-date';
   $scope.carList.sort(function(a, b){
     return a.name - b.name;
   });
@@ -61,27 +62,27 @@ var tmpCarList = [
 {
   name: "Blue Car", 
   id: 7,
-  date: "9/9/99"
+  date: new Date('1/23/2013')
 },
 {
   name: "Red Car",
   id: 9,
-  date: "5/9/99"
+  date: new Date('5/23/2013')
 },
 {
   name: "Orange Car",
   id: 2,
-  date: "1/9/99"
+  date: new Date('3/23/2013')
 },
 {
   name: "Purple Car",
   id: 20,
-  date: "6/20/49"
+  date: new Date('7/23/2013')
 },
 {
   name: "Teal Car",
   id: 50,
-  date: "6/1/05"
+  date: new Date('6/23/2013')
 }
 ];
 

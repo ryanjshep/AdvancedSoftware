@@ -32,7 +32,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="x in carList | orderBy:'-id':true">
+        <tr ng-repeat="x in carList | orderBy:propertyName:true">
           <td> <button ng-click="listToLoad(x)">Load In</button> </td>
           <td> <h4>{{x.name}}</h4></td>
           <td> {{x.id}} </td>
