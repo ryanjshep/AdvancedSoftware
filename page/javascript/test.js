@@ -51,13 +51,6 @@ app.controller('StoreController', function($scope, $http){
 
 });
 
-var gem = {
-  name: 'Dodechaechedron',
-  price: 2.95,
-  description: ' . . . ',
-  loaded: false
-}
-
 var tmpCarList = [
 {
   name: "Blue Car", 
