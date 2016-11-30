@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h3>Acknowledgment</h3>
+    <p> Ryan, Keith, Ted, Elijash </p>
+    <h3>Problem Synopsis</h3>
+    <p> The Car Max Car Delivery people a hard time filling out loading </p>
+    <p> car forms. They want an application will make it easier for them </p>
+    <p> to fill out forms </p>
+    <p> They also wants a way to search for specific types of cars by adding </p>
+    <p> a sort button on all the types</p>
+    <p> Additionally, they want to search for all nearby trucks that can load
+    cars using gps</p>
+    <h3>System Overview</h3>
+    <h3>System Components</h3>
+    <p> cpanel, mysql, php, javascript </p>
+    <h4>insert picture here</h4>
+    <p> 1. Security Measure. Front End MUST get get check by login</p>
+    <p> Once Credential has been check the user now has an option to</p>
+    <p> get a list of cars based on speicfication </p>
+    <p> 2. The user can select cars on the list they got</p>
+    <p>    front end stores the selected list id </p>
+    <p> once the user is sure that these are the cars that will be loaded</p>
+    <p> the user can select ok then  these varaibles will change the database</p>
+    <h3>Interface Specification</h3>
+    <p> Currently there are 4 interfaces screen,</p>
+    <p> Login: The user will have to write in the credential to get access to
+    other features</p>
+    <p> Check Car List: Though not specificied, there needs to be a way to get a
+    car list based on what the users wants. </p>
+    <p>The user would select what location
+    and date from a parameter</p>
+    <p> Loading Car List: After the user gets a list of cars, the user can </p>
+    <p> oraganize the data in his screen by sorting it. Pressing the type on top
+    of </p>
+    <p> the table will sort it by that type. On each row, theres a button that</p>
+    <p>allows that row data to be added into the loadlist. The user would be
+    able</p>
+    <p>to see both the loadlist and the list of cars on the same screen. At
+    the</p>
+    <p>bottom right of the screen, there is a submit button that will make a new
+    loadlist into the database</p>
+    <p> GPS Truck Locater: Will should all the trucks in the map other
+    functionality not specified yet</p>
+    <h4>System Contraints </h4>
+    <p> The Interface should be easy, the hard part is making sure the </p>
+    <p> front end application sends and get data correctly from and to the
+    backend </p>
+    <h4> System Security Requirements</h4>
+    <p> The type of users will be employees/managers of the Car Max Trasnport </p>
+    <p> They will all have access to the list of cars in the database </p>
+    <p> Once the user submit his login information and it pass, </p>
+    <p> The user can ask the database to retrieve a carlist depending on </p> 
+    <p> on his specification </p>
+    <p> They should be only be able to make a new loadlist for the database
+        and edit it within a temopary hour</p>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+-----------------------------------------------------------------------
+                          Acknowledgment
+-----------------------------------------------------------------------
+Ryan, Keith, Ted, Elijash
+
+
+-----------------------------------------------------------------------
+                        Problem Synopsis
+-----------------------------------------------------------------------
+  The Car Max Delivery Employee's have a hard time filling out forms about
+transporting cars. They have to get a list of cars from a sheet or excel file
+and manually write them down into the list of cars that are being transported.
+
+  The Car Max Delivery Employee wants an easier way to fill out these forms.
+They want a way to just select car in the list and it will be writen into
+the load list form.
+
+ They also want a way to sort the car list by a variety of types such
+ as date, id, trasnport, etc.
+
+ Additionally they want a gps tracker to look at all the avaiable trucks
+ around a specific area.
+
+
+-----------------------------------------------------------------------
+                        System Overview
+-----------------------------------------------------------------------
+*requires pictures*
+
+
+-----------------------------------------------------------------------
+                        System Components
+-----------------------------------------------------------------------
+*requires pictures*
+
+
+-----------------------------------------------------------------------
+                      Interface Specification
+-----------------------------------------------------------------------
+Login Screen:
+  Preferably using google account to deal with secruity. The user can
+  input his email account and password for the website to access the
+  application. 
+
+Main Menu:
+  Not Specified Yet... but it will just show the Getting List of Cars Menu.
+
+Getting List of Cars:
+  Not Known Yet, the company said that they would get a list of cars
+  from an accel file. 
+  So in this part we ask the user to input that accel file. The application will
+  read that into a json file to organize and put on the table list on
+  the next interface
+
+Selecting from a list of cars to load list:
+  There will be a long list of cars. 
+  The interface of the cars varies depending on what devices they use.
+  ALl of it though will show 2 major tables.
+  1 Tables shows the list of cars.
+  1 Tables shows the list of cars that the user wants to load.
+  Pressing on column type will organize the table by that type.
+  There will be a button that says ReadyToLoad which will submit to
+  loadlist to the database.
+
+-----------------------------------------------------------------------
+                      System Contraints
+-----------------------------------------------------------------------
+Right now, the users can see list of cars that are in the database.
+The only thing the users can do is be able to make data into
+the loadlist table and can change it within a speicfic amount of time.
+
+Most employee users should not be able to change anything in the database
+other than the car loadlist table.
+-----------------------------------------------------------------------
+                      System Security Requirments
+-----------------------------------------------------------------------
+The type of users will be employee/managers of the Car Max Transport Group.
+They will bee able to view most tables in the database. They will be able
+to add news cars into the database. They also are able to add cars to a loadlist 
+table.
+
+
+
